@@ -11,7 +11,7 @@ addButton.addEventListener('click', () => {
 
 // Add event listener for "Remove" button.
 removeButton.addEventListener('click', () => {
-    if (currentInputValue === '0') return;
+    if (currentInputValue =< 0) return;
     currentInputValue--
     document.getElementById('todo').innerHTML = currentInputValue;
 });
